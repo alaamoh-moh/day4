@@ -40,7 +40,6 @@ export class AddComponent {
   
   addform(){
     var from= document.getElementById('form');
-    from.style.visibility='visible';
     
   };
 
