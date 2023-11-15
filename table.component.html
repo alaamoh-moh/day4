@@ -1,0 +1,28 @@
+<p>people list</p>
+
+<table class="table table-striped">
+    <tr >
+        <th *ngFor="let x of tablehead">
+            {{ x}}
+        </th>
+        </tr>
+        <tr *ngFor="let item of people">
+            <td>
+                {{item.number}}
+            </td>
+        <td>
+            {{item.name}}
+        </td>
+        <td>
+            {{item.username}}
+        </td>
+        <td>
+            {{item.phone}}
+        </td>
+
+        <td *ngFor="let y of btn" [ngClass]="{'details':y[0],'delete':y[1],'update':y[2] }">
+           <button>{{y}}</button> 
+            
+        </td>
+    </tr>
+  </table>
